@@ -5,4 +5,4 @@ service apache2 restart
 # health check
 
 # enable 
-touch /usr/share/nginx/html/health
+touch /var/www/health
