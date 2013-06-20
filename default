@@ -1,0 +1,17 @@
+   <VirtualHost *:80>
+   	ServerAdmin webmaster@localhost
+   	SetEnv UPSCALE_MYSQL_DB_HOST "{{UPSCALE_MYSQL_DB_HOST}}"
+   	SetEnv UPSCALE_MYSQL_DB_PORT "{{UPSCALE_MYSQL_DB_PORT}}"
+   	SetEnv UPSCALE_MYSQL_DB_NAME "{{UPSCALE_MYSQL_DB_NAME}}"
+   	SetEnv UPSCALE_MYSQL_DB_USERNAME "{{UPSCALE_MYSQL_DB_USERNAME}}"
+   	SetEnv UPSCALE_MYSQL_DB_PASSWORD "{{UPSCALE_MYSQL_DB_PASSWORD}}"
+   	DocumentRoot /var/www/{{ root }}/
+   	<Directory />
+   		Options FollowSymLinks
+   		AllowOverride All
+   	</Directory>
+   	ErrorLog ${APACHE_LOG_DIR}/error.log
+   	LogLevel warn
+   	CustomLog ${APACHE_LOG_DIR}/access.log combined
+   </VirtualHost>
+

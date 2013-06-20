@@ -1,0 +1,6 @@
+template: php
+
+version: 1
+
+env:
+ UPSCALE_ROOT: /var/www

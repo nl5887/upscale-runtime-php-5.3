@@ -1,0 +1,7 @@
+#!/bin/bash
+cp default /etc/apache2/sites-available/
+
+chown -R www-data:www-data /var/www
+for MOD in "actions" "fastcgi" "alias" "rewrite" "headers" "php5-fpm"; do a2enmod $MOD; done;
+
+
