@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cp -y php5-fpm.conf /etc/apache2/mods-available/php5-fpm.conf
-cp -y php5-fpm.load /etc/apache2/mods-available/php5-fpm.load
+cp php5-fpm.conf /etc/apache2/mods-available/php5-fpm.conf
+cp php5-fpm.load /etc/apache2/mods-available/php5-fpm.load
 

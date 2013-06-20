@@ -5,7 +5,7 @@
    	SetEnv UPSCALE_MYSQL_DB_NAME "{{UPSCALE_MYSQL_DB_NAME}}"
    	SetEnv UPSCALE_MYSQL_DB_USERNAME "{{UPSCALE_MYSQL_DB_USERNAME}}"
    	SetEnv UPSCALE_MYSQL_DB_PASSWORD "{{UPSCALE_MYSQL_DB_PASSWORD}}"
-   	DocumentRoot /var/www/{{ root }}/
+   	DocumentRoot /var/www/
    	<Directory />
    		Options FollowSymLinks
    		AllowOverride All
